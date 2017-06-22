@@ -23,9 +23,7 @@
         levelLines[i].setAttribute("style", styleString);
         levelCon.appendChild(levelLines[i]);
     }
-    </script>
-    <!-- trigerJs -->
-    <script>
+ 
     // build scene
     var tween1 = TweenMax.staggerFromTo(".virticalLine", 1, {
         top: -300,
