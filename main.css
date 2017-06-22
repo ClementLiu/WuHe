@@ -106,6 +106,7 @@ body {
 .svgFontCollection {
     height: 10000px;
     width: 100%;
+    min-width: 850px;
     position: relative;
     overflow: hidden;
 }
