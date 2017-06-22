@@ -1,0 +1,215 @@
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#firstImg {
+    position: absolute;
+    /*background-color: violet;*/
+    top: 0px;
+    width: 100%;
+    height: 400px;
+}
+
+.blackColor {
+    background-color: yellow;
+}
+
+.Absolute-Center {
+    width: 50px;
+    height: 50px;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#cut-box {
+    position: relative;
+    margin-top: 670px;
+    width: 100%;
+    height: 607px;
+    /*overflow-x:hidden;*/
+    overflow: hidden;
+}
+
+#letters-map {
+    /*background-color: blue;*/
+    width: 2290px;
+    /*height: 596px;*/
+    position: absolute;
+    display: block;
+    text-align: center;
+    left: -moz-calc(50% - 1131px);
+    left: -webkit-calc(50% - 1131px);
+    left: calc(50% - 1131px);
+    font-family: Source Han Serif SC;
+    font-weight: bold;
+    font-size: 74px;
+    line-height: 100px;
+    letter-spacing: 25.53px;
+    color: #000000;
+    color: rgb(0, 0, 0);
+}
+
+#rensvg {
+    margin: 0px auto auto auto;
+    width: 116px;
+    height: 85.5px;
+    position: absolute;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /*background-color: yellow;*/
+    z-index: 2;
+}
+
+#svgCon {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    margin-top: 880px;
+}
+
+
+/*#gradientCut {
+    width: 100%;
+    height: 49vw;
+    max-height: 630px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 370px;
+}
+*/
+
+#gradientCut {
+    width: 100%;
+    height: auto;
+    /*max-height: 630px;*/
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 370px;
+}
+
+
+/*#grad {
+    width: 153%;
+    height: 98vw;
+    position: absolute;
+    left: -27vw;
+    background: radial-gradient( ellipse farthest-side, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.32) 84.99%, rgba(0, 0, 0, 0.22) 89.01%, rgba(0, 0, 0, 0) 100%);
+}*/
+
+#fontPrint {
+    position: relative;
+    margin: auto;
+    margin-top: 230px;
+}
+
+.svgFontCollection {
+    height: 10000px;
+    width: 100%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.svgFontsBack {
+    position: absolute;
+}
+
+#fontCutbox {
+    position: relative;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+#fontImageCol {
+    position: relative;
+    display: block;
+    width: 2290px;
+    height: 100%;
+    display: block;
+    left: calc(50% - 1131px);
+}
+
+#fontImageCol img {
+    position: absolute;
+    top: 0px;
+}
+
+#fontImageCol img:nth-child(1) {
+    position: relative;
+}
+
+#fontImageCol #fontMove {
+    top: -10px;
+}
+
+#buttomWuhezhizhong {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#buttomWuhezhizhong {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 90px;
+    margin-bottom: 100px;
+}
+
+#wuhe {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    overflow: auto;
+    margin: auto;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: visible;
+}
+
+#wuHanOverCol {
+    position: absolute;
+    top: -10%;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+
+
+
+#wuHanOverCol img{
+    width: 25%;
+    position: relative;
+    display: inline;
+    float: left;
+    visibility: hidden;
+}
+

@@ -1,0 +1,109 @@
+.virticalLine {
+    height: 600px;
+    width: 0px;
+    border-right: solid 1px #ccc;
+    position: absolute;
+    margin-left: 50%;
+    margin-right: 50%;
+    top: -607px;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+/*.virticalLine>end {
+    height: 607px;
+    width: 0px;
+    border-right: solid 1px #ccc;
+    position: absolute;
+    margin: auto;
+    top: 470px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}*/
+
+.levelLine {
+    height: 0px;
+    width: 100%;
+    border-top: solid 1px #ccc;
+    position: absolute;
+    /*top: 576px;*/
+    left: 100%;
+    bottom: 0px;
+    right: 0px;
+}
+
+.levelLine>end {
+    height: 0px;
+    width: 100%;
+    border-top: solid 1px #ccc;
+    position: absolute;
+    /*top: 576px;*/
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+/*span#one {
+    background: green;
+}
+
+span#two {
+    background: red;
+}
+*/
+
+#virticalLinesCollect {
+    position: absolute;
+    height: 1277px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+}
+
+#levelLinesCollect {
+    /*background-color: yellow;*/
+    position: absolute;
+    height: 1277px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+}
+
+
+/*trigger*/
+
+.trigger {
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 0px;
+}
+
+#trigger1 {
+    top: 660px;
+}
+
+#trigger2,
+#triggerFonts,
+#triggerPrint {
+    top: 0px;
+}
+
+#triggerGrad {
+    top: 0px;
+}
+
+#triggerFonts {
+    position: relative;
+    width: 10px;
+    height: 0px;
+}
