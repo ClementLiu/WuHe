@@ -117,7 +117,7 @@
     // move SvgBackgroundBegin
     var svgFontCollectionHeight = document.querySelector("#svgFonts").offsetHeight;
 
-    var fontsTweens = fontBackgroundTween(100);
+    var fontsTweens = fontBackgroundTween(40);
     var svgFontsMoveScene = new ScrollMagic.Scene({
             triggerElement: "#triggerFonts",
             duration: svgFontCollectionHeight
