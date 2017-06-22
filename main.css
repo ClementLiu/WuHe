@@ -96,12 +96,14 @@ body {
     height: 10000px;
     width: 100%;
     position: relative;
-    width: 100%;
     overflow: hidden;
 }
 
 .svgFontsBack {
     position: absolute;
+    left: 0px;
+    right: 0px;
+
 }
 
 #fontCutbox {
@@ -116,13 +118,14 @@ body {
     display: block;
     width: 2290px;
     height: 100%;
-    display: block;
     left: calc(50% - 1131px);
 }
 
 #fontImageCol img {
     position: absolute;
     top: 0px;
+    left: 0px;
+    float: left;
 }
 
 #fontImageCol img:nth-child(1) {
