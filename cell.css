@@ -1,7 +1,7 @@
 .virticalLine {
     height: 600px;
     width: 0px;
-    border-right: solid 1px #ccc;
+    border-right: solid 1px #000000;
     position: absolute;
     margin-left: 50%;
     margin-right: 50%;
@@ -13,25 +13,24 @@
 .levelLine {
     height: 0px;
     width: 100%;
-    border-top: solid 1px #ccc;
+    border-top: solid 2px #000000;
     position: absolute;
     /*top: 576px;*/
     left: 100%;
     bottom: 0px;
     right: 0px;
 }
-
+/*
 .levelLine>end {
     height: 0px;
     width: 100%;
     border-top: solid 1px #ccc;
     position: absolute;
-    /*top: 576px;*/
     left: 0px;
     bottom: 0px;
     right: 0px;
 }
-
+*/
 #virticalLinesCollect {
     position: absolute;
     height: 1277px;

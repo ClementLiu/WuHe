@@ -25,7 +25,7 @@
     }
  
     // build scene
-    var tween1 = TweenMax.staggerFromTo(".virticalLine", 1, {
+    var tween1 = TweenMax.staggerFromTo(".virticalLine", .7, {
         top: -300,
         opacity: 0
 
@@ -35,7 +35,7 @@
         ease: Power1.easeOut,
     }, 0.04);
 
-    var tween2 = TweenMax.staggerFromTo(".levelLine", 1, {
+    var tween2 = TweenMax.staggerFromTo(".levelLine", .5, {
         left: "190%",
         opacity: 0
     }, {
