@@ -54,62 +54,67 @@
     // gradeMove();
     // function gradeMove() {
     var martopGrad, windowWide, windowHeight, gradHeight, moveDistance, gradSvgHeight;
-    var stopDistance, renButtomDistance;
+    var stopDistance, buttomDistance;
     windowWide = window.innerWidth;
     windowHeight = window.innerHeight;
-    gradSvgHeight = document.querySelector("#gradientCut>img").offsetHeight;
+    gradSvgHeight = document.querySelector("#gradientCut").offsetHeight;
     gradHeight = windowWide * 0.49;
     moveDistance = 1370;
     martopGrad = moveDistance + 0.5 * windowHeight - gradSvgHeight;
     stopDistance = 1000;
-    renButtomDistance = 85 + gradHeight * 115 / 792;
+    buttomDistance = windowWide * 2;
+
+    var svgFontsHeight = document.querySelector("#svgFonts").offsetHeight;
 
     //renMOve
     var movePin = TweenMax.staggerFromTo("#rensvg", 1, {
         marginTop: 0,
         fill: "black",
+        opacity: 1
     }, {
-        marginTop: 397 + martopGrad + stopDistance + gradSvgHeight - renButtomDistance,
+        // marginTop: 397 + martopGrad + stopDistance + gradSvgHeight - renButtomDistance,
+        marginTop: 397 + svgFontsHeight + gradSvgHeight - buttomDistance,
         fill: "white",
+        opacity: 0,
         ease: Power0.easeOut
     });
 
     var sceneMoveRenScene = new ScrollMagic.Scene({
             triggerElement: "#trigger2",
             // duration: 2200
-            duration: moveDistance + 397 + stopDistance
+            duration: 397 + svgFontsHeight + gradSvgHeight - buttomDistance
         })
         .setTween(movePin)
         .addTo(controller);
     // renMoveEnd
 
     // stopGrad
-    var noMoveGrad = TweenMax.staggerFromTo("#gradientCut", 1, {
-        marginTop: martopGrad,
-    }, {
-        marginTop: martopGrad + stopDistance,
-        ease: Power0.easeOut
-    });
-    var gradStopScen = new ScrollMagic.Scene({
-            triggerElement: "#triggerGrad",
-            duration: stopDistance,
-            offset: moveDistance
-        })
-        .setTween(noMoveGrad)
-        .addTo(controller);
-    // stopGradEnd
-    var moveGrad = TweenMax.staggerFromTo("#gradientCut", 1, {
-        marginTop: 0,
-    }, {
-        marginTop: martopGrad,
-        ease: Power0.easeOut
-    });
-    var gradMoveScen = new ScrollMagic.Scene({
-            triggerElement: "#triggerGrad",
-            duration: moveDistance
-        })
-        .setTween(moveGrad)
-        .addTo(controller);
+    // var noMoveGrad = TweenMax.staggerFromTo("#gradientCut", 1, {
+    //     marginTop: martopGrad,
+    // }, {
+    //     marginTop: martopGrad + stopDistance,
+    //     ease: Power0.easeOut
+    // });
+    // var gradStopScen = new ScrollMagic.Scene({
+    //         triggerElement: "#triggerGrad",
+    //         duration: stopDistance,
+    //         offset: moveDistance
+    //     })
+    //     .setTween(noMoveGrad)
+    //     .addTo(controller);
+    // // stopGradEnd
+    // var moveGrad = TweenMax.staggerFromTo("#gradientCut", 1, {
+    //     marginTop: 0,
+    // }, {
+    //     marginTop: martopGrad,
+    //     ease: Power0.easeOut
+    // });
+    // var gradMoveScen = new ScrollMagic.Scene({
+    //         triggerElement: "#triggerGrad",
+    //         duration: moveDistance
+    //     })
+    //     .setTween(moveGrad)
+    //     .addTo(controller);
     // }
     // gradmoveEnd
 
@@ -138,7 +143,7 @@
         var svgFontsNew = new Array(numbers);
         var colorMax = [0.4, 0.6, 0.8, 1];
         // 12278 too big
-        var svgMoveRange = svgFontCollectionHeight - 300;
+        var svgMoveRange = svgFontCollectionHeight - 800;
         svgFontCol = document.querySelector("#svgFonts");
         for (var a = 0; a < svgFontsNew.length; a++) {
             var i = a % 7;
