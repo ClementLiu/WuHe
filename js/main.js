@@ -123,7 +123,7 @@ var sceneMoveRenScene = new ScrollMagic.Scene({
 var svgFontCollectionHeight = document.querySelector("#svgFonts").offsetHeight;
 
 // var fontsTweens = fontBackgroundTween(40);
-var fontsTweens = fontBackgroundTween(10);
+var fontsTweens = fontBackgroundTween(8);
 var svgFontsMoveScene = new ScrollMagic.Scene({
         triggerElement: "#triggerFonts",
         duration: svgFontCollectionHeight
@@ -144,7 +144,7 @@ function fontBackgroundTween(numbers) {
     var svgFontsNew = new Array(numbers);
     var colorMax = [0.4, 0.6, 0.8, 1];
     // 12278 too big
-    var svgMoveRange = svgFontCollectionHeight - 800;
+    var svgMoveRange = svgFontCollectionHeight - 2000;
     svgFontCol = document.querySelector("#svgFonts");
     for (var a = 0; a < svgFontsNew.length; a++) {
         var i = a % 7;
